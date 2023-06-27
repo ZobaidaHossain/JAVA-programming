@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="fahim">
+  <ClassDiagramComponents>
+    <Class name="ClassRoom" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="classEnvironment" type="String" visibility="private"/>
+        <Field name="StudentList" type="ArrayList&lt;YoungStudent&gt;" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="classEnvironment"/>
+          <Argument type="String" name="colourOfWalls"/>
+          <Argument type="String" name="arrangementOfFurniture"/>
+          <Argument type="String" name="decorationsOnWalls"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getClassEnvironment" returnType="String" visibility="public"/>
+        <Method name="setClassEnvironment" returnType="void" visibility="public">
+          <Argument type="String" name="classEnvironment"/>
+        </Method>
+        <Method name="getColourOfWalls" returnType="String" visibility="public"/>
+        <Method name="setColourOfWalls" returnType="void" visibility="public">
+          <Argument type="String" name="colourOfWalls"/>
+        </Method>
+        <Method name="getArrangementOfFurniture" returnType="String" visibility="public"/>
+        <Method name="setArrangementOfFurniture" returnType="void" visibility="public">
+          <Argument type="String" name="arrangementOfFurniture"/>
+        </Method>
+        <Method name="getDecorationsOnWalls" returnType="String" visibility="public"/>
+        <Method name="setDecorationsOnWalls" returnType="void" visibility="public">
+          <Argument type="String" name="decorationsOnWalls"/>
+        </Method>
+        <Method name="EnsuringUtmostcomfort" returnType="void" visibility="public"/>
+        <Method name="OfferingNeedfulRights" returnType="void" visibility="public"/>
+        <Method name="MinimizingDistractionsToStudies" returnType="void" visibility="public"/>
+        <Method name="IncreasingEngagementAndParticipation" returnType="void" visibility="public"/>
+        <Method name="addStudent" returnType="void" visibility="public">
+          <Argument type="YoungStudent" name="ys"/>
+        </Method>
+        <Method name="removeStudent" returnType="void" visibility="public">
+          <Argument type="YoungStudent" name="ys"/>
+        </Method>
+        <Method name="displayStudentList" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Drawing" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Methods>
+        <Method name="DrawingOnBoard" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Person" package="" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="Name" type="String" visibility="protected"/>
+        <Field name="Age" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Teacher" package="" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="Designation" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="designation"/>
+          <Argument type="String" name="proficiency"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="designation"/>
+          <Argument type="String" name="proficiency"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDesignation" returnType="String" visibility="public"/>
+        <Method name="setDesignation" returnType="void" visibility="public">
+          <Argument type="String" name="designation"/>
+        </Method>
+        <Method name="getProficiency" returnType="String" visibility="public"/>
+        <Method name="setProficiency" returnType="void" visibility="public">
+          <Argument type="String" name="proficiency"/>
+        </Method>
+        <Method name="TeachingQuality" returnType="void" visibility="public"/>
+        <Method name="DrawingOnBoard" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Teaching" package="" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Methods>
+        <Method name="TeachingQuality" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="YoungStudent" package="" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="ID" type="String" visibility="protected"/>
+        <Field name="favouriteHobby" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="ID"/>
+          <Argument type="String" name="favouriteHobby"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="ID"/>
+          <Argument type="String" name="favouriteHobby"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getID" returnType="String" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="String" name="ID"/>
+        </Method>
+        <Method name="getFavouriteHobby" returnType="String" visibility="public"/>
+        <Method name="setFavouriteHobby" returnType="void" visibility="public">
+          <Argument type="String" name="favouriteHobby"/>
+        </Method>
+        <Method name="display" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="YoungStudent" target="Person"/>
+    <UseRelation source="ClassRoom" target="YoungStudent" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Teacher" target="Person"/>
+    <HasRelation name="StudentList" source="ClassRoom" target="YoungStudent" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;YoungStudent&gt;"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Teacher" target="Teaching"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Teacher" target="Drawing"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

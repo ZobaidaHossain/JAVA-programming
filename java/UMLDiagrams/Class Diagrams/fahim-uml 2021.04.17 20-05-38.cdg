@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="fahim-uml">
+  <ClassDiagramComponents>
+    <Class name="Applicant" package="" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="ApplicantName" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="applicantName"/>
+          <Argument type="String" name="applicantEmail"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setApplicantName" returnType="void" visibility="public">
+          <Argument type="String" name="applicantName"/>
+        </Method>
+        <Method name="setApplicantEmail" returnType="void" visibility="public">
+          <Argument type="String" name="applicantEmail"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ApplicantInformations" package="" visibility="public" xPosition="20.0" yPosition="579.0">
+      <Fields>
+        <Field name="Age" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="age"/>
+          <Argument type="String" name="marriageStatus"/>
+          <Argument type="String" name="nationality"/>
+          <Argument type="String" name="religion"/>
+          <Argument type="String" name="economicStatus"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="applicantName"/>
+          <Argument type="String" name="applicantEmail"/>
+          <Argument type="String" name="age"/>
+          <Argument type="String" name="marriageStatus"/>
+          <Argument type="String" name="nationality"/>
+          <Argument type="String" name="religion"/>
+          <Argument type="String" name="economicStatus"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="String" name="age"/>
+        </Method>
+        <Method name="setMarriageStatus" returnType="void" visibility="public">
+          <Argument type="String" name="marriageStatus"/>
+        </Method>
+        <Method name="setNationality" returnType="void" visibility="public">
+          <Argument type="String" name="nationality"/>
+        </Method>
+        <Method name="setReligion" returnType="void" visibility="public">
+          <Argument type="String" name="religion"/>
+        </Method>
+        <Method name="setEconomicStatus" returnType="void" visibility="public">
+          <Argument type="String" name="economicStatus"/>
+        </Method>
+        <Method name="display" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ApplicationProcess" package="" visibility="public" xPosition="700.0" yPosition="20.0">
+      <Fields>
+        <Field name="ApplicationNo" type="String" visibility="protected"/>
+        <Field name="Applying" type="Applicant" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="applicationNo"/>
+          <Argument type="Applicant" name="applying"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setApplicationNo" returnType="void" visibility="public">
+          <Argument type="String" name="applicationNo"/>
+        </Method>
+        <Method name="setApplying" returnType="void" visibility="public">
+          <Argument type="Applicant" name="applying"/>
+        </Method>
+        <Method name="getApplying" returnType="Applicant" visibility="public"/>
+        <Method name="ChooseYourProgram" returnType="boolean" visibility="public"/>
+        <Method name="ReadingRequirementsAndDeadlines" returnType="boolean" visibility="public"/>
+        <Method name="WritingMotivationLetter" returnType="boolean" visibility="public"/>
+        <Method name="AskingForARecommendationLetter" returnType="boolean" visibility="public"/>
+        <Method name="BeingConfidentForInterview" returnType="boolean" visibility="public"/>
+        <Method name="GettingPreparedForIELTSorTOEFL" returnType="boolean" visibility="public"/>
+        <Method name="PlanningForCosts" returnType="boolean" visibility="public"/>
+        <Method name="RegisteringForEntranceExam" returnType="boolean" visibility="public"/>
+        <Method name="SchedulingVisaAppointment" returnType="boolean" visibility="public"/>
+        <Method name="UsingOnlineApplicationPlatform" returnType="boolean" visibility="public"/>
+        <Method name="TranslatingAndAuthenticatingDocuments" returnType="boolean" visibility="public"/>
+        <Method name="Display" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ApplicationPlatform" package="" visibility="public" xPosition="962.0" yPosition="599.0">
+      <Methods>
+        <Method name="UsingOnlineApplicationPlatform" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Costs" package="" visibility="public" xPosition="374.0" yPosition="206.0">
+      <Methods>
+        <Method name="PlanningForCosts" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="DocumentAuthentication" package="" visibility="public" xPosition="1561.0" yPosition="124.0">
+      <Methods>
+        <Method name="TranslatingAndAuthenticatingDocuments" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="EntranceExam" package="" visibility="public" xPosition="1291.0" yPosition="20.0">
+      <Methods>
+        <Method name="RegisteringForEntranceExam" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IELTSorTOEFL" package="" visibility="public" xPosition="1595.0" yPosition="527.0">
+      <Methods>
+        <Method name="GettingPreparedForIELTSorTOEFL" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Interview" package="" visibility="public" xPosition="1320.0" yPosition="553.0">
+      <Methods>
+        <Method name="BeingConfidentForInterview" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="MotivationLetter" package="" visibility="public" xPosition="1293.0" yPosition="719.0">
+      <Methods>
+        <Method name="WritingMotivationLetter" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Program" package="" visibility="public" xPosition="419.0" yPosition="323.0">
+      <Methods>
+        <Method name="ChooseYourProgram" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="RecommendationLetter" package="" visibility="public" xPosition="46.0" yPosition="483.0">
+      <Methods>
+        <Method name="AskingForARecommendationLetter" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Requirements" package="" visibility="public" xPosition="1293.0" yPosition="286.0">
+      <Methods>
+        <Method name="ReadingRequirementsAndDeadlines" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="VisaAppointment" package="" visibility="public" xPosition="1606.0" yPosition="232.0">
+      <Methods>
+        <Method name="SchedulingVisaAppointment" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="RecommendationLetter"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="Requirements"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="VisaAppointment"/>
+    <UseRelation source="ApplicationProcess" target="Applicant" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Applying" source="ApplicationProcess" target="Applicant" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="DocumentAuthentication"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="Program"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="Costs"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="MotivationLetter"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="IELTSorTOEFL"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="EntranceExam"/>
+    <IsRelation name="is" source="ApplicantInformations" target="Applicant"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="Interview"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ApplicationProcess" target="ApplicationPlatform"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

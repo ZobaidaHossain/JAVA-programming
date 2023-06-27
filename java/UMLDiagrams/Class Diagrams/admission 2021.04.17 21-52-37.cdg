@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="admission">
+  <ClassDiagramComponents>
+    <Class name="Applicant" package="" visibility="public" xPosition="420.0" yPosition="145.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="age" type="String" visibility="private"/>
+        <Field name="Address" type="String" visibility="private"/>
+        <Field name="homeland" type="String" visibility="private"/>
+        <Field name="Marital_status" type="String" visibility="private"/>
+        <Field name="previous_college_name" type="String" visibility="private"/>
+        <Field name="universityList" type="ArrayList&lt;university&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="String" name="homeland"/>
+          <Argument type="String" name="Marital_status"/>
+          <Argument type="String" name="previous_college_name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getAge" returnType="String" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="String" name="age"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="Address"/>
+        </Method>
+        <Method name="getHomeland" returnType="String" visibility="public"/>
+        <Method name="setHomeland" returnType="void" visibility="public">
+          <Argument type="String" name="homeland"/>
+        </Method>
+        <Method name="getMarital_status" returnType="String" visibility="public"/>
+        <Method name="setMarital_status" returnType="void" visibility="public">
+          <Argument type="String" name="Marital_status"/>
+        </Method>
+        <Method name="getPrevious_college_name" returnType="String" visibility="public"/>
+        <Method name="setPrevious_college_name" returnType="void" visibility="public">
+          <Argument type="String" name="previous_college_name"/>
+        </Method>
+        <Method name="choose_your_program" returnType="void" visibility="public"/>
+        <Method name="requirements_and_deadlines" returnType="void" visibility="public"/>
+        <Method name="motivation_letter" returnType="void" visibility="public"/>
+        <Method name="recommendation_letter" returnType="void" visibility="public"/>
+        <Method name="IELTS_or_TOEFL_test" returnType="void" visibility="public"/>
+        <Method name="Translate_and_authenticate_your_documents" returnType="void" visibility="public"/>
+        <Method name="online_application_platforms" returnType="void" visibility="public"/>
+        <Method name="Register_for_the_entrance_exam" returnType="void" visibility="public"/>
+        <Method name="confident_for_the_interview" returnType="void" visibility="public"/>
+        <Method name="Schedule_your_visa_appointment" returnType="void" visibility="public"/>
+        <Method name="Plan_for_the_costs" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="university" package="" visibility="public" xPosition="1171.0" yPosition="421.0">
+      <Fields>
+        <Field name="country" type="String" visibility="private"/>
+        <Field name="University_name" type="String" visibility="private"/>
+        <Field name="subject_name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="country"/>
+          <Argument type="String" name="University_name"/>
+          <Argument type="String" name="subject_name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCountry" returnType="String" visibility="public"/>
+        <Method name="setCountry" returnType="void" visibility="public">
+          <Argument type="String" name="country"/>
+        </Method>
+        <Method name="getUniversity_name" returnType="String" visibility="public"/>
+        <Method name="setUniversity_name" returnType="void" visibility="public">
+          <Argument type="String" name="University_name"/>
+        </Method>
+        <Method name="getSubject_name" returnType="String" visibility="public"/>
+        <Method name="setSubject_name" returnType="void" visibility="public">
+          <Argument type="String" name="subject_name"/>
+        </Method>
+        <Method name="displayabroad" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="application" package="" visibility="public" xPosition="12.0" yPosition="20.0">
+      <Methods>
+        <Method name="choose_your_program" returnType="void" visibility="public"/>
+        <Method name="requirements_and_deadlines" returnType="void" visibility="public"/>
+        <Method name="motivation_letter" returnType="void" visibility="public"/>
+        <Method name="recommendation_letter" returnType="void" visibility="public"/>
+        <Method name="IELTS_or_TOEFL_test" returnType="void" visibility="public"/>
+        <Method name="Translate_and_authenticate_your_documents" returnType="void" visibility="public"/>
+        <Method name="online_application_platforms" returnType="void" visibility="public"/>
+        <Method name="Register_for_the_entrance_exam" returnType="void" visibility="public"/>
+        <Method name="confident_for_the_interview" returnType="void" visibility="public"/>
+        <Method name="Schedule_your_visa_appointment" returnType="void" visibility="public"/>
+        <Method name="Plan_for_the_costs" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="confident_for_the_interview" package="" visibility="public" xPosition="25.0" yPosition="783.0">
+      <Methods/>
+    </Interface>
+    <Interface name="IELTS_or_TOEFL_test" package="" visibility="public" xPosition="363.0" yPosition="20.0">
+      <Methods/>
+    </Interface>
+    <Interface name="motivation_letter" package="" visibility="public" xPosition="583.0" yPosition="20.0">
+      <Methods/>
+    </Interface>
+    <Interface name="online_application_platforms" package="" visibility="public" xPosition="803.0" yPosition="20.0">
+      <Methods/>
+    </Interface>
+    <Interface name="Plan_for_the_costs" package="" visibility="public" xPosition="1065.0" yPosition="20.0">
+      <Methods/>
+    </Interface>
+    <Interface name="recommendation_letter" package="" visibility="public" xPosition="1188.0" yPosition="176.0">
+      <Methods/>
+    </Interface>
+    <Interface name="Register_for_the_entrance_exam" package="" visibility="public" xPosition="25.0" yPosition="679.0">
+      <Methods/>
+    </Interface>
+    <Interface name="requirements_and_deadlines" package="" visibility="public" xPosition="12.0" yPosition="561.0">
+      <Methods/>
+    </Interface>
+    <Interface name="Schedule_your_visa_appointment" package="" visibility="public" xPosition="25.0" yPosition="325.0">
+      <Methods/>
+    </Interface>
+    <Interface name="Translate_and_authenticate_your_documents" package="" visibility="public" xPosition="12.0" yPosition="444.0">
+      <Methods/>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="recommendation_letter"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="requirements_and_deadlines"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="motivation_letter"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="Translate_and_authenticate_your_documents"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="Register_for_the_entrance_exam"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="online_application_platforms"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="Schedule_your_visa_appointment"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="IELTS_or_TOEFL_test"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="Plan_for_the_costs"/>
+    <HasRelation name="universityList" source="Applicant" target="university" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;university&gt;"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="application"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Applicant" target="confident_for_the_interview"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

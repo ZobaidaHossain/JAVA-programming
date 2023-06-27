@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Classroom_environment">
+  <ClassDiagramComponents>
+    <Interface name="Attentive_to_class" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Methods>
+        <Method name="payAttentionInClass" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="classroom" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="classroomName" type="String" visibility="private"/>
+        <Field name="classroomNumber" type="String" visibility="private"/>
+        <Field name="brightPoster" type="String" visibility="private"/>
+        <Field name="colorFullWall" type="String" visibility="private"/>
+        <Field name="arragementoffurniture" type="String" visibility="private"/>
+        <Field name="DecorationWall" type="String" visibility="private"/>
+        <Field name="studentList" type="ArrayList&lt;student&gt;" visibility="private"/>
+        <Field name="teacherList" type="ArrayList&lt;teacher&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="classroomName"/>
+          <Argument type="String" name="classroomNumber"/>
+          <Argument type="String" name="brightPoster"/>
+          <Argument type="String" name="colorFullWall"/>
+          <Argument type="String" name="arragementoffurniture"/>
+          <Argument type="String" name="DecorationWall"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addstudent" returnType="void" visibility="public">
+          <Argument type="student" name="s"/>
+        </Method>
+        <Method name="removestudent" returnType="void" visibility="public">
+          <Argument type="student" name="s"/>
+        </Method>
+        <Method name="displayStudentList" returnType="void" visibility="public"/>
+        <Method name="getClassroomName" returnType="String" visibility="public"/>
+        <Method name="setClassroomName" returnType="void" visibility="public">
+          <Argument type="String" name="classroomName"/>
+        </Method>
+        <Method name="getClassroomNumber" returnType="String" visibility="public"/>
+        <Method name="setClassroomNumber" returnType="void" visibility="public">
+          <Argument type="String" name="classroomNumber"/>
+        </Method>
+        <Method name="getBrightPoster" returnType="String" visibility="public"/>
+        <Method name="setBrightPoster" returnType="void" visibility="public">
+          <Argument type="String" name="brightPoster"/>
+        </Method>
+        <Method name="getColorFullWall" returnType="String" visibility="public"/>
+        <Method name="setColorFullWall" returnType="void" visibility="public">
+          <Argument type="String" name="colorFullWall"/>
+        </Method>
+        <Method name="getArragementoffurniture" returnType="String" visibility="public"/>
+        <Method name="setArragementoffurniture" returnType="void" visibility="public">
+          <Argument type="String" name="arragementoffurniture"/>
+        </Method>
+        <Method name="getDecorationWall" returnType="String" visibility="public"/>
+        <Method name="setDecorationWall" returnType="void" visibility="public">
+          <Argument type="String" name="DecorationWall"/>
+        </Method>
+        <Method name="Thermal_comfort" returnType="void" visibility="public"/>
+        <Method name="Visual_comfort" returnType="void" visibility="public"/>
+        <Method name="Acoustic_comfort" returnType="void" visibility="public"/>
+        <Method name="Cooperative_Learning_Arrangement" returnType="void" visibility="public"/>
+        <Method name="clean_classroom" returnType="void" visibility="public"/>
+        <Method name="organized_space" returnType="void" visibility="public"/>
+        <Method name="Ensuring_the_utmost_comfort_of_the_young_learners" returnType="void" visibility="public"/>
+        <Method name="Offering_all_the_needful_right_at_hand_for_them" returnType="void" visibility="public"/>
+        <Method name="Minimizing_the_distractions_to_their_studies" returnType="void" visibility="public"/>
+        <Method name="Increasing_engagement_and_participation_among_students" returnType="void" visibility="public"/>
+        <Method name="displayall" returnType="void" visibility="public"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="motivate_student" package="" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Methods>
+        <Method name="motivatingStudent" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="person" package="" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="protected"/>
+        <Field name="age" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="displaypersoninfo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Reading" package="" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Methods>
+        <Method name="CompleteTheLesson" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="student" package="" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="cgpa" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="cgpa"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getCgpa" returnType="String" visibility="public"/>
+        <Method name="setCgpa" returnType="void" visibility="public">
+          <Argument type="String" name="cgpa"/>
+        </Method>
+        <Method name="CompleteTheLesson" returnType="void" visibility="public"/>
+        <Method name="payAttentionInClass" returnType="void" visibility="public"/>
+        <Method name="displaystudentinfo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="teacher" package="" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="designation" type="String" visibility="private"/>
+        <Field name="dept" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="designation"/>
+          <Argument type="String" name="dept"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDesignation" returnType="String" visibility="public"/>
+        <Method name="setDesignation" returnType="void" visibility="public">
+          <Argument type="String" name="designation"/>
+        </Method>
+        <Method name="getDept" returnType="String" visibility="public"/>
+        <Method name="setDept" returnType="void" visibility="public">
+          <Argument type="String" name="dept"/>
+        </Method>
+        <Method name="teachHerStudent" returnType="void" visibility="public"/>
+        <Method name="write" returnType="void" visibility="public"/>
+        <Method name="FriendlyBehavior" returnType="void" visibility="public"/>
+        <Method name="motivatingStudent" returnType="void" visibility="public"/>
+        <Method name="displayteacherinfo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Teaching" package="" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Methods>
+        <Method name="teachHerStudent" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="well_behavior" package="" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Methods>
+        <Method name="FriendlyBehavior" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="writing_on_board" package="" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Methods>
+        <Method name="write" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="teacher" target="Teaching"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="student" target="Reading"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="teacher" target="well_behavior"/>
+    <IsRelation name="is" source="teacher" target="person"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="teacher" target="motivate_student"/>
+    <UseRelation source="classroom" target="student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="teacherList" source="classroom" target="teacher" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;teacher&gt;"/>
+    <HasRelation name="studentList" source="classroom" target="student" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;student&gt;"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="student" target="Attentive_to_class"/>
+    <IsRelation name="is" source="student" target="person"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="teacher" target="writing_on_board"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

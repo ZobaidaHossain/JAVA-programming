@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="account">
+  <ClassDiagramComponents>
+    <Class name="Account" package="account" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="balance" type="double" visibility="private"/>
+        <Field name="annualinterestrate" type="double" visibility="private"/>
+        <Field name="datacreated" type="LocalDateTime" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="balance"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="balance"/>
+          <Argument type="double" name="annualinterestrate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDatacreated" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getBalance" returnType="double" visibility="public"/>
+        <Method name="setBalance" returnType="void" visibility="public">
+          <Argument type="double" name="balance"/>
+        </Method>
+        <Method name="getAnnualinterestrate" returnType="double" visibility="public"/>
+        <Method name="getmonthlyinterestrate" returnType="double" visibility="public"/>
+        <Method name="withdraw" returnType="double" visibility="public"/>
+        <Method name="deposit" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="test" package="account" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
